@@ -74,6 +74,7 @@ fn build_cmd<S: AsRef<OsStr>>(
 	}
 	cmd.arg("--message-format=json-render-diagnostics")
 		.arg("-Zjson-target-spec")
+		.arg("-Z")
 		.arg("build-std=core,alloc")
 		.arg("--target")
 		.arg(target)
